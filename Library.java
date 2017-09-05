@@ -33,6 +33,12 @@ public class Library{
     return this.stockCount() == this.shelf.length;
   }
 
+  public Book getBook(int position){
+    Book book = this.shelf[position];
+    this.shelf[position] = null;
+    return book;
+  }
+
 
 
 
